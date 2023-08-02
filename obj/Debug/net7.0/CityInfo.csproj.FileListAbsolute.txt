@@ -31,3 +31,4 @@ D:\c#\api\CityInfo\obj\Debug\net7.0\refint\CityInfo.dll
 D:\c#\api\CityInfo\obj\Debug\net7.0\CityInfo.pdb
 D:\c#\api\CityInfo\obj\Debug\net7.0\CityInfo.genruntimeconfig.cache
 D:\c#\api\CityInfo\obj\Debug\net7.0\ref\CityInfo.dll
+D:\c#\api\CityInfo\obj\Debug\net7.0\CityInfo.sourcelink.json
