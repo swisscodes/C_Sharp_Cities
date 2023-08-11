@@ -32,3 +32,7 @@ D:\c#\api\CityInfo\obj\Debug\net7.0\CityInfo.pdb
 D:\c#\api\CityInfo\obj\Debug\net7.0\CityInfo.genruntimeconfig.cache
 D:\c#\api\CityInfo\obj\Debug\net7.0\ref\CityInfo.dll
 D:\c#\api\CityInfo\obj\Debug\net7.0\CityInfo.sourcelink.json
+D:\c#\api\CityInfo\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\c#\api\CityInfo\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\c#\api\CityInfo\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\c#\api\CityInfo\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

@@ -5,7 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers((options) =>
 {
     options.ReturnHttpNotAcceptable = true;//returns 406 not acceptable
-}).AddXmlDataContractSerializerFormatters();// adds support for xml
+}).AddNewtonsoftJson()
+  .AddXmlDataContractSerializerFormatters();// adds support for xml
 
 
 
