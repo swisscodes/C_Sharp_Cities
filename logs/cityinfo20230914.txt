@@ -1,0 +1,113 @@
+2023-09-14 00:24:39.864 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-14 00:24:40.126 +03:00 [DBG] Hosting starting
+2023-09-14 00:24:41.158 +03:00 [INF] Now listening on: https://localhost:7144
+2023-09-14 00:24:41.163 +03:00 [INF] Now listening on: http://localhost:5160
+2023-09-14 00:24:41.165 +03:00 [DBG] Loaded hosting startup assembly CityInfo
+2023-09-14 00:24:41.168 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-14 00:24:41.173 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-14 00:24:41.176 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-14 00:24:41.179 +03:00 [INF] Hosting environment: Development
+2023-09-14 00:24:41.181 +03:00 [INF] Content root path: D:\c#\api\CityInfo
+2023-09-14 00:24:41.184 +03:00 [DBG] Hosting started
+2023-09-14 00:24:41.445 +03:00 [DBG] Connection id "0HMTKJVBQUG63" received FIN.
+2023-09-14 00:24:41.452 +03:00 [DBG] Connection id "0HMTKJVBQUG63" accepted.
+2023-09-14 00:24:41.454 +03:00 [DBG] Connection id "0HMTKJVBQUG63" started.
+2023-09-14 00:24:41.472 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-14 00:24:41.720 +03:00 [DBG] Connection id "0HMTKJVBQUG63" stopped.
+2023-09-14 00:24:41.727 +03:00 [DBG] Connection id "0HMTKJVBQUG63" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-14 00:24:42.446 +03:00 [DBG] Connection id "0HMTKJVBQUG64" accepted.
+2023-09-14 00:24:42.680 +03:00 [DBG] Connection id "0HMTKJVBQUG64" started.
+2023-09-14 00:24:42.680 +03:00 [DBG] Connection id "0HMTKJVBQUG65" accepted.
+2023-09-14 00:24:42.690 +03:00 [DBG] Connection id "0HMTKJVBQUG65" started.
+2023-09-14 00:24:42.876 +03:00 [DBG] Connection id "0HMTKJVBQUG65" received FIN.
+2023-09-14 00:24:42.890 +03:00 [DBG] Connection 0HMTKJVBQUG64 established using the following protocol: "Tls12"
+2023-09-14 00:24:42.890 +03:00 [DBG] Connection 0HMTKJVBQUG65 established using the following protocol: "Tls12"
+2023-09-14 00:24:42.981 +03:00 [DBG] Connection id "0HMTKJVBQUG65" is closed. The last processed stream ID was 0.
+2023-09-14 00:24:43.003 +03:00 [DBG] Connection id "0HMTKJVBQUG65" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-14 00:24:43.011 +03:00 [DBG] The connection queue processing loop for 0HMTKJVBQUG65 completed.
+2023-09-14 00:24:43.016 +03:00 [DBG] Connection id "0HMTKJVBQUG65" stopped.
+2023-09-14 00:24:43.122 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger - null null
+2023-09-14 00:24:43.540 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-09-14 00:24:43.590 +03:00 [DBG] No candidates found for the request path '/swagger'
+2023-09-14 00:24:43.595 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:43.605 +03:00 [DBG] No candidates found for the request path '/swagger'
+2023-09-14 00:24:43.608 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:43.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger - 301 0 null 560.8351ms
+2023-09-14 00:24:43.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger/index.html - null null
+2023-09-14 00:24:43.716 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-09-14 00:24:43.719 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:43.722 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-09-14 00:24:43.729 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:43.915 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-09-14 00:24:44.002 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-09-14 00:24:44.022 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger/swagger-ui.css - null null
+2023-09-14 00:24:44.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger/swagger-ui-bundle.js - null null
+2023-09-14 00:24:44.023 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger/swagger-ui-standalone-preset.js - null null
+2023-09-14 00:24:44.024 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger/index.html - 200 null text/html;charset=utf-8 333.0902ms
+2023-09-14 00:24:44.031 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-09-14 00:24:44.040 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-09-14 00:24:44.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/_vs/browserLink - null null
+2023-09-14 00:24:44.044 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-09-14 00:24:44.051 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:44.051 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/_framework/aspnetcore-browser-refresh.js - null null
+2023-09-14 00:24:44.052 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:44.065 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:44.074 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-09-14 00:24:44.078 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:44.077 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-09-14 00:24:44.075 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-09-14 00:24:44.083 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:44.085 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:44.088 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/_framework/aspnetcore-browser-refresh.js - 200 12687 application/javascript; charset=utf-8 36.9218ms
+2023-09-14 00:24:44.135 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-09-14 00:24:44.164 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-09-14 00:24:44.219 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-09-14 00:24:44.347 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/_vs/browserLink - 200 null text/javascript; charset=UTF-8 302.9933ms
+2023-09-14 00:24:44.361 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger/swagger-ui.css - 200 144929 text/css 338.0841ms
+2023-09-14 00:24:44.362 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 339.5511ms
+2023-09-14 00:24:44.364 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 341.5958ms
+2023-09-14 00:24:44.864 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger/v1/swagger.json - null null
+2023-09-14 00:24:45.107 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7144/swagger/favicon-32x32.png - null null
+2023-09-14 00:24:45.123 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2023-09-14 00:24:45.115 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-14 00:24:45.143 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:45.145 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:45.146 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2023-09-14 00:24:45.150 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:45.148 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-09-14 00:24:45.152 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-09-14 00:24:45.153 +03:00 [DBG] Request did not match any endpoints
+2023-09-14 00:24:45.155 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger/favicon-32x32.png - 200 628 image/png 47.9561ms
+2023-09-14 00:24:45.806 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 942.6266ms
+2023-09-14 00:26:58.067 +03:00 [DBG] Connection id "0HMTKJVBQUG64" is closing.
+2023-09-14 00:26:58.070 +03:00 [DBG] Connection id "0HMTKJVBQUG64" is closed. The last processed stream ID was 17.
+2023-09-14 00:26:58.075 +03:00 [DBG] Connection id "0HMTKJVBQUG64" received FIN.
+2023-09-14 00:26:58.077 +03:00 [DBG] The connection queue processing loop for 0HMTKJVBQUG64 completed.
+2023-09-14 00:26:58.077 +03:00 [DBG] Connection id "0HMTKJVBQUG64" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-14 00:26:58.082 +03:00 [DBG] Connection id "0HMTKJVBQUG64" stopped.
+2023-09-14 09:22:37.301 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-14 09:22:37.504 +03:00 [DBG] Hosting starting
+2023-09-14 09:22:37.734 +03:00 [INF] Now listening on: https://localhost:7144
+2023-09-14 09:22:37.737 +03:00 [INF] Now listening on: http://localhost:5160
+2023-09-14 09:22:37.738 +03:00 [DBG] Loaded hosting startup assembly CityInfo
+2023-09-14 09:22:37.740 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-14 09:22:37.741 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-14 09:22:37.743 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-14 09:22:37.744 +03:00 [INF] Hosting environment: Development
+2023-09-14 09:22:37.748 +03:00 [INF] Content root path: D:\c#\api\CityInfo
+2023-09-14 09:22:37.750 +03:00 [DBG] Hosting started
+2023-09-14 09:33:27.628 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-14 09:33:27.750 +03:00 [DBG] Hosting starting
+2023-09-14 09:33:27.950 +03:00 [INF] Now listening on: https://localhost:7144
+2023-09-14 09:33:27.952 +03:00 [INF] Now listening on: http://localhost:5160
+2023-09-14 09:33:27.954 +03:00 [DBG] Loaded hosting startup assembly CityInfo
+2023-09-14 09:33:27.958 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-14 09:33:27.959 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-14 09:33:27.961 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-14 09:33:27.963 +03:00 [INF] Hosting environment: Development
+2023-09-14 09:33:27.965 +03:00 [INF] Content root path: D:\c#\api\CityInfo
+2023-09-14 09:33:27.966 +03:00 [DBG] Hosting started

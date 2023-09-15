@@ -1,4 +1,7 @@
+using CityInfo;
+using CityInfo.DbData;
 using CityInfo.Services;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,9 +26,17 @@ builder.Services.AddControllers((options) =>
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddTransient<LocalMailService>();
+builder.Services.AddDbContext<CityInfoContext>(
+    (DbContextOptions) => DbContextOptions.UseSqlite("Data Source=CityInfo.db"));
 
+//For compiler only if statement
+#if DEBUG
+builder.Services.AddTransient<IMailService, LocalMailService>();
+#else
+builder.Services.AddTransient<IMailService, CloudMailService>();
+#endif
 
+builder.Services.AddSingleton<CitiesDataStore>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

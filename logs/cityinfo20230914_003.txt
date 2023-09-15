@@ -1,0 +1,14 @@
+2023-09-14 10:22:52.179 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-14 10:22:52.386 +03:00 [DBG] Hosting starting
+2023-09-14 10:22:52.631 +03:00 [INF] Now listening on: https://localhost:7144
+2023-09-14 10:22:52.645 +03:00 [INF] Now listening on: http://localhost:5160
+2023-09-14 10:22:52.647 +03:00 [DBG] Loaded hosting startup assembly CityInfo
+2023-09-14 10:22:52.652 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-14 10:22:52.655 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-14 10:22:52.660 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-14 10:22:52.662 +03:00 [INF] Hosting environment: Development
+2023-09-14 10:22:52.664 +03:00 [INF] Content root path: D:\c#\api\CityInfo
+2023-09-14 10:22:52.666 +03:00 [DBG] Hosting started
+2023-09-14 10:23:23.831 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-09-14 10:23:24.798 +03:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-09-14 10:23:25.261 +03:00 [DBG] 'CityInfoContext' disposed.

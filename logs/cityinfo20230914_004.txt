@@ -1,0 +1,113 @@
+2023-09-14 10:23:23.877 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-09-14 10:23:24.018 +03:00 [DBG] Hosting starting
+2023-09-14 10:23:24.169 +03:00 [INF] Now listening on: https://localhost:7144
+2023-09-14 10:23:24.171 +03:00 [INF] Now listening on: http://localhost:5160
+2023-09-14 10:23:24.172 +03:00 [DBG] Loaded hosting startup assembly CityInfo
+2023-09-14 10:23:24.174 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-09-14 10:23:24.175 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-09-14 10:23:24.177 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-14 10:23:24.179 +03:00 [INF] Hosting environment: Development
+2023-09-14 10:23:24.181 +03:00 [INF] Content root path: D:\c#\api\CityInfo
+2023-09-14 10:23:24.182 +03:00 [DBG] Hosting started
+2023-09-14 10:23:24.337 +03:00 [DBG] Connection id "0HMTKUDTMB3JP" received FIN.
+2023-09-14 10:23:24.337 +03:00 [DBG] Connection id "0HMTKUDTMB3JP" accepted.
+2023-09-14 10:23:24.337 +03:00 [DBG] Connection id "0HMTKUDTMB3JQ" accepted.
+2023-09-14 10:23:24.337 +03:00 [DBG] Connection id "0HMTKUDTMB3JQ" received FIN.
+2023-09-14 10:23:24.342 +03:00 [DBG] Connection id "0HMTKUDTMB3JP" started.
+2023-09-14 10:23:24.343 +03:00 [DBG] Connection id "0HMTKUDTMB3JQ" started.
+2023-09-14 10:23:24.364 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-14 10:23:24.364 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-09-14 10:23:24.400 +03:00 [DBG] Connection id "0HMTKUDTMB3JP" stopped.
+2023-09-14 10:23:24.400 +03:00 [DBG] Connection id "0HMTKUDTMB3JQ" stopped.
+2023-09-14 10:23:24.408 +03:00 [DBG] Connection id "0HMTKUDTMB3JP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-14 10:23:24.408 +03:00 [DBG] Connection id "0HMTKUDTMB3JQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-09-14 10:23:39.680 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-09-14 10:23:41.077 +03:00 [DBG] Entity Framework Core 7.0.11 initialized 'CityInfoContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.11' with options: None
+2023-09-14 10:23:41.159 +03:00 [DBG] Creating DbConnection.
+2023-09-14 10:23:41.208 +03:00 [DBG] Created DbConnection. (38ms).
+2023-09-14 10:23:41.220 +03:00 [DBG] Migrating using database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.224 +03:00 [DBG] Creating DbConnection.
+2023-09-14 10:23:41.238 +03:00 [DBG] Created DbConnection. (13ms).
+2023-09-14 10:23:41.241 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.298 +03:00 [DBG] Opened connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.313 +03:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.347 +03:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (1ms).
+2023-09-14 10:23:41.378 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-09-14 10:23:41.397 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (9ms).
+2023-09-14 10:23:41.407 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (26ms).
+2023-09-14 10:23:41.407 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.410 +03:00 [DBG] Opened connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.463 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-09-14 10:23:41.563 +03:00 [INF] Executed DbCommand (112ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-09-14 10:23:41.578 +03:00 [DBG] Closing connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.591 +03:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (8ms).
+2023-09-14 10:23:41.593 +03:00 [DBG] Creating DbConnection.
+2023-09-14 10:23:41.593 +03:00 [DBG] Created DbConnection. (0ms).
+2023-09-14 10:23:41.593 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.594 +03:00 [DBG] Opened connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.594 +03:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.594 +03:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-09-14 10:23:41.596 +03:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2023-09-14 10:23:41.596 +03:00 [DBG] Created DbCommand for 'ExecuteScalar' (2ms).
+2023-09-14 10:23:41.597 +03:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (2ms).
+2023-09-14 10:23:41.597 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.597 +03:00 [DBG] Opened connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.597 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-09-14 10:23:41.597 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-09-14 10:23:41.598 +03:00 [DBG] Closing connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.598 +03:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-09-14 10:23:41.694 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-09-14 10:23:41.694 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-09-14 10:23:41.695 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2023-09-14 10:23:41.726 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:41.727 +03:00 [DBG] Opened connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.729 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-09-14 10:23:41.731 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-09-14 10:23:41.771 +03:00 [DBG] Closing data reader to 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.774 +03:00 [DBG] A data reader for 'main' on server 'D:\c#\api\CityInfo\CityInfo.db' is being disposed after spending 40ms reading results.
+2023-09-14 10:23:41.774 +03:00 [DBG] Closing connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:41.774 +03:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-09-14 10:23:41.811 +03:00 [INF] Applying migration '20230914072324_CityInfoDbInitialMigration'.
+2023-09-14 10:23:42.073 +03:00 [DBG] Opening connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:42.074 +03:00 [DBG] Opened connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:42.078 +03:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-09-14 10:23:42.090 +03:00 [DBG] Began transaction with isolation level 'Serializable'.
+2023-09-14 10:23:42.092 +03:00 [DBG] Creating DbCommand for 'ExecuteNonQuery'.
+2023-09-14 10:23:42.093 +03:00 [DBG] Created DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-14 10:23:42.093 +03:00 [DBG] Initialized DbCommand for 'ExecuteNonQuery' (0ms).
+2023-09-14 10:23:42.094 +03:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Cities" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Cities" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NULL
+);
+2023-09-14 10:23:42.107 +03:00 [ERR] Failed executing DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Cities" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Cities" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Description" TEXT NULL
+);
+2023-09-14 10:23:42.109 +03:00 [DBG] Disposing transaction.
+2023-09-14 10:23:42.110 +03:00 [DBG] Closing connection to database 'main' on server 'D:\c#\api\CityInfo\CityInfo.db'.
+2023-09-14 10:23:42.112 +03:00 [DBG] Closed connection to database 'main' on server 'CityInfo.db' (0ms).
+2023-09-14 10:23:42.120 +03:00 [DBG] 'CityInfoContext' disposed.
+2023-09-14 10:23:42.121 +03:00 [DBG] Disposing connection to database 'main' on server 'CityInfo.db'.
+2023-09-14 10:23:42.121 +03:00 [DBG] Disposed connection to database 'main' on server 'CityInfo.db' (0ms).

@@ -10,9 +10,12 @@ namespace CityInfo.Controllers.Cities
     public class PointsOfInterestController : ControllerBase
     {
         private readonly ILogger<PointsOfInterestController> _logger;
-        public PointsOfInterestController(ILogger<PointsOfInterestController> logger, LocalMailService mailService)
+        private readonly CitiesDataStore _citiesDataStore;
+        public PointsOfInterestController(ILogger<PointsOfInterestController> logger, 
+            LocalMailService mailService, CitiesDataStore citiesDataStore)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _citiesDataStore = citiesDataStore ?? throw new ArgumentNullException(nameof(citiesDataStore));
         }
         
         [HttpGet]
@@ -21,7 +24,7 @@ namespace CityInfo.Controllers.Cities
             try
             {
 
-                var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+                var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
                 
                 if (city == null)
                 {
@@ -40,7 +43,7 @@ namespace CityInfo.Controllers.Cities
         [HttpGet("{poiId}", Name = "GetPointOfInterest")]
         public ActionResult<PointOfInterestDto> GetPointOfInterest(int cityId, int poiId)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
@@ -61,14 +64,14 @@ namespace CityInfo.Controllers.Cities
         {
             if (ModelState.IsValid)
             {
-                var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+                var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
                 if (city == null)
                 {
                     return NotFound(); // adds also 404
                 }
 
                 // Demo porposes only i know this is not wise
-                var maxPointOfInterestId = CitiesDataStore.Current.Cities.SelectMany(c =>
+                var maxPointOfInterestId = _citiesDataStore.Cities.SelectMany(c =>
                 c.PointsOfInterest).Max(p => p.Id);
 
                 var finalPointOfInterests = new PointOfInterestDto()
@@ -95,7 +98,7 @@ namespace CityInfo.Controllers.Cities
         public ActionResult UpdatePointOfInterest(int cityId, int poiId,
             PointOfInterestForUpdatingDto pointOfInterest)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
@@ -119,7 +122,7 @@ namespace CityInfo.Controllers.Cities
         public ActionResult PartiallyUpdatePointOfInterest(
             int cityId, int poiId, JsonPatchDocument<PointOfInterestForUpdatingDto> patchDocument)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
@@ -154,7 +157,7 @@ namespace CityInfo.Controllers.Cities
         [HttpDelete("{poiId}")]
         public ActionResult DeletePointOfInterest(int cityId, int poiId)
         {
-            var city = CitiesDataStore.Current.Cities.FirstOrDefault(c => c.Id == cityId);
+            var city = _citiesDataStore.Cities.FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
             {
